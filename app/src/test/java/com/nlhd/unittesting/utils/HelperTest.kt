@@ -38,4 +38,23 @@ class HelperTest {
         assertEquals(true, result)
         println("2")
     }
+
+    @Test
+    fun validatePassword() {
+        val result = helper.isValidatePassword("")
+        assertEquals(false, result)
+    }
+
+    fun reverseString() {
+        val result = helper.reverseString(null)
+        assertEquals("olleh", result)
+
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun reverseStringNull() {
+        val result = helper.reverseString(null)
+
+    }
+
 }
