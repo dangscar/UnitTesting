@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     testImplementation(libs.junit.junit)
+    testImplementation(libs.junit.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -79,6 +80,17 @@ dependencies {
     testImplementation("androidx.room:room-testing:2.6.1")
 
     //Kotlin Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0-RC")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+
+        // Mockito
+    testImplementation ("org.mockito:mockito-core:5.5.0")
+    testImplementation ("org.mockito:mockito-inline:3.11.2")
+    testImplementation ("org.mockito:mockito-android:3.11.2")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
+
+        // Mockposable (thư viện hỗ trợ mocking trong Jetpack Compose)
+    //testImplementation ("com.github.jeppeman:mockposable:1.0.0")
+
+
 }
