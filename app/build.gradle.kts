@@ -65,6 +65,7 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.junit.junit)
     testImplementation(libs.junit.junit)
+    testImplementation(libs.junit.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -91,6 +92,9 @@ dependencies {
 
         // Mockposable (thư viện hỗ trợ mocking trong Jetpack Compose)
     //testImplementation ("com.github.jeppeman:mockposable:1.0.0")
+
+    //Testing Coroutines
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
 
 
 }
